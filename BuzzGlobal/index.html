@@ -4,8 +4,7 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="owlcarousel/owl.carousel.min.css">
-    <link rel="stylesheet" href="owlcarousel/owl.theme.default.min.css">
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>BuzzGlobal</title>
   </head>
@@ -15,10 +14,10 @@
       <div class="logo-container">
           BUZZ<span>dhk</span>
       </div>
-      <div class="nav-items-container">
-        <a href="#" class="nav-item">Portfolio</a>
-        <a href="#" class="nav-item">Service</a>
-        <a href="#" class="nav-item">Testimonial</a>
+      <div class="nav-items-container desktop">
+          <a href="#" class="nav-item">Portfolio</a>
+          <a href="#" class="nav-item">Service</a>
+          <a href="#" class="nav-item">Testimonial</a>
         <a href="#" class="buzz-button">Ask for Quote</a>
       </div>
     </div>
@@ -164,15 +163,7 @@
     <!-- service-card-start -->
     <div class="service-card">
       <div class="card-title-container">
-        <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-          <rect width="50" height="50" fill="url(#pattern0)"/>
-          <defs>
-          <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
-          <use xlink:href="#image0_109_131" transform="scale(0.02)"/>
-          </pattern>
-          <image id="image0_109_131" width="50" height="50" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAADQklEQVR4nO2ZTWsUQRCGB70oRkxARaJRwU8Q1B+QED34A/y4i6hRD3qTmIMSjYge/QUeBU2MiBFURDEnFaI3FUwOwZv4lTgz/b5DLKmkZhmT3WQ3u5mZ6BY0bHdXTfez1VVT2+t5dalLXf4vcc5tJ3kPwBhJyXMD8JNkbxiGW2dAAPiW9QZZOdDXv2BI9tnEQ9/313s5F9/3NwAYMKC7hQlzlaiCt0gkCIIW+/J/FAZjV3mLTDh933WQf9UjItIE4BjJ+yQ/APilTT+T7Nc51fHyCiIiy0l2aeCVkTK/k7wgIstyBeL7fjOAN4mNPgZwwjm3Q0RWaHPO7dQxAE8Seq/VNhcgvu83kxw1ez0+rWUs3ma6ajNaDQxrAaLHKfYEgOci0mjjawH0kHybiJEhAFdEZI3pNAJ4Ybav5nvMWAsQjQmzex9DOOeOzFar6YvXOXfIYJpIfrS5zkxAZCo7xYHdmoD4bWP9JNvjGImiaJ9lMoWZcM4dtHXb4wQwn2zGakEsxU4GduI4xZ44P8vCnXFZISKr7VlPbexo6iD2jevix20zPbEnYh09biQ7tInIqoTtA7O9bLYnzbYvC5DJs60p1vrv7BntCYiRRHwMxzBRFO23sSHta2qOs56XNgiAcdUXkYZifZKniwR7h0GuNI+MWb/B+uNZgIS28cm0CWAQwMvEfHeRjNWdmC/oW1Wg80HqIFZHhbqJEqCzgiTF3ikTJD+lDhIEwSYAu0vNVwKiEkXRAQB7c/d7pFKQ+QrrINV55CbJM9pq9ZuEWXhkWhsJw3AzyVPVgDEHIOohlgDrSFYCuQeZA2y4HJhcgpSqBFIFEZF1Wq7XEgRlpOuagWidBOBZ4mh0ZQqCeV6ZkrxUZAM30gAJgmBjsSvTXhscqASG5K0SG/m8kCBBELQAeGS6dwoTzrltekVf5gKDCbvDNQjqOUEADJbQ+RKG4Za/KPV/BvVMfMxmWaBQrtsi19MGwdR9we1q78VmCICrCwmSqmiQ1xjmXLoECwfTlhlIDWFGRGRJpiAGc60aEGcXeLkQvXCLLykqbBe9vAmAXYkX15zHydm9cG4FwB7NQvrOmdY0bZ/VwBaRpVnvsy518WbKH8HaTHXg5q3eAAAAAElFTkSuQmCC"/>
-          </defs>
-          </svg>          
+        <img src="./assets/service-icons/icons8-digital-50 1.svg" alt="digital">  
         <h2>Digital Marketing</h2>
       </div>
       <p>
@@ -251,46 +242,136 @@
   <div class="portfolio-container">
     <h2 class="heading-title title-red">Portfolio</h2>
     <p>Our successful projects</p>
+
+         
+      
   <!-- carousel start -->
-<!-- <div class="carousel-portfolio">
-  <div class="carousel-header">
-    <div class="left">
+
+   <div class="carousel-container">
+    <div class="button-container">
+      <button id="prevButton"><svg xmlns="http://www.w3.org/2000/svg" width="57" height="57" viewBox="0 0 57 57" fill="none">
+        <circle cx="28.5" cy="28.5" r="26.5" fill="#D10000" stroke="#1E1E1E" stroke-width="4"/>
+        <path d="M17.9393 26.9393C17.3536 27.5251 17.3536 28.4749 17.9393 29.0607L27.4853 38.6066C28.0711 39.1924 29.0208 39.1924 29.6066 38.6066C30.1924 38.0208 30.1924 37.0711 29.6066 36.4853L21.1213 28L29.6066 19.5147C30.1924 18.9289 30.1924 17.9792 29.6066 17.3934C29.0208 16.8076 28.0711 16.8076 27.4853 17.3934L17.9393 26.9393ZM37 26.5L19 26.5L19 29.5L37 29.5L37 26.5Z" fill="#1E1E1E"/>
+        </svg></button>
+    <button id="nextButton"><svg xmlns="http://www.w3.org/2000/svg" width="57" height="57" viewBox="0 0 57 57" fill="none">
+      <circle cx="28.5" cy="28.5" r="26.5" fill="#D10000" stroke="#1E1E1E" stroke-width="4"/>
+      <path d="M39.0607 29.0607C39.6464 28.4749 39.6464 27.5251 39.0607 26.9393L29.5147 17.3934C28.9289 16.8076 27.9792 16.8076 27.3934 17.3934C26.8076 17.9792 26.8076 18.9289 27.3934 19.5147L35.8787 28L27.3934 36.4853C26.8076 37.0711 26.8076 38.0208 27.3934 38.6066C27.9792 39.1924 28.9289 39.1924 29.5147 38.6066L39.0607 29.0607ZM18 29.5H38V26.5H18V29.5Z" fill="#1E1E1E"/>
+      </svg></button>
+    </div>
+    
+    <div class="carousel">
+      <div class="carousel-item">
+        <div class="carousel-header">
+          <div class="left">
+            <h1 class="carousel-counter">01</h1>
+            <h2>GOOD VIBRATIONS</h2>
+          </div>
+        </div>
+        <div class="carousel-card">
+          <img src="./assets/project/good_vibration.png" alt="good_vibration">
+        </div>
+      </div>
+      <div class="carousel-item">
+        <div class="carousel-header">
+          <div class="left">
+            <h1 class="carousel-counter">02</h1>
+            <h2>EXPLORATION INTO JAZZ</h2>
+          </div>
+        </div>
+        <div class="carousel-card">
+          <img src="./assets/project/good_vibration.png" alt="good_vibration">
+        </div>
+      </div>
+      <div class="carousel-item">
+        <div class="carousel-header">
+          <div class="left">
+            <h1 class="carousel-counter">03</h1>
+            <h2>WINTER GIVEAWAY GIG</h2>
+          </div>
+        </div>
+        <div class="carousel-card">
+          <img src="./assets/project/good_vibration.png" alt="good_vibration">
+        </div>
+      </div>
+      <div class="carousel-item">
+        <div class="carousel-header">
+          <div class="left">
+            <h1 class="carousel-counter">04</h1>
+            <h2>MUSIC FESTIVAL</h2>
+          </div>
+        </div>
+        <div class="carousel-card">
+          <img src="./assets/project/good_vibration.png" alt="good_vibration">
+        </div>
+      </div>
+      <div class="carousel-item">
+        <div class="carousel-header">
+          <div class="left">
+            <h1 class="carousel-counter">05</h1>
+            <h2>INTO THE VOID</h2>
+          </div>
+        </div>
+        <div class="carousel-card">
+          <img src="./assets/project/good_vibration.png" alt="good_vibration">
+        </div>
+      </div>
+      <div class="carousel-item">
+        <div class="carousel-header">
+          <div class="left">
+            <h1 class="carousel-counter">06</h1>
+            <h2>DHAKA LOCAL ART FESTIVAL</h2>
+          </div>
+        </div>
+        <div class="carousel-card">
+          <img src="./assets/project/good_vibration.png" alt="good_vibration">
+        </div>
+      </div>
+      <div class="carousel-item">
+        <div class="carousel-header">
+          <div class="left">
+            <h1 class="carousel-counter">07</h1>
+            <h2>EUPHORIA</h2>
+          </div>
+        </div>
+        <div class="carousel-card">
+          <img src="./assets/project/good_vibration.png" alt="good_vibration">
+        </div>
+      </div>
+    </div>
+  </div>
+<div class="carousel-subtitle-container">
+  <div class="carousel-subtitle">
+    <div class="subtitle-item active">
       <h1 class="carousel-counter">01</h1>
       <h2>GOOD VIBRATIONS</h2>
     </div>
-
+    <div  class="subtitle-item">
+      <h1 class="carousel-counter ">02</h1>
+      <h2>EXPLORATION INTO JAZZ</h2>
+    </div>
+    <div  class="subtitle-item">
+      <h1 class="carousel-counter">03</h1>
+      <h2>WINTER GIVEAWAY GIG</h2>
+    </div>
+    <div  class="subtitle-item">
+      <h1 class="carousel-counter">04</h1>
+      <h2>MUSIC FESTIVAL</h2>
+    </div>
+    <div  class="subtitle-item">
+      <h1 class="carousel-counter">05</h1>
+      <h2>INTO THE VOID</h2>
+    </div>
+    <div  class="subtitle-item">
+      <h1 class="carousel-counter">06</h1>
+      <h2>DHAKA LOCAL ART FESTIVAL</h2>
+    </div>
+    <div  class="subtitle-item">
+      <h1 class="carousel-counter">07</h1>
+      <h2>EUPHORIA</h2>
+    </div>
   </div>
-  <div class="carousel-card">
-    <img src="./assets/project/good_vibration.png" alt="good_vibration" >
-  </div> -->
-  <!-- <div class="carousel-subtitle">
-    <h1>02</h1>
-    <h2>EXPLORATION INTO JAZZ</h2>
-    <h1>03</h1>
-    <h2>WINTER GIVEAWAY GIG</h2>
-    <h1>04</h1>
-    <h2>MUSIC FESTIVAL</h2>
-    <h1>05</h1>
-    <h2>DHAKA LOCAL ART FESTIVAL</h2>
-    <h1>06</h1>
-    <h2>EUPHORIA</h2>
-  </div> -->
-  <div class="owl-carousel owl-theme">
-    <div class="item"><h4>1</h4></div>
-    <div class="item"><h4>2</h4></div>
-    <div class="item"><h4>3</h4></div>
-    <div class="item"><h4>4</h4></div>
-    <div class="item"><h4>5</h4></div>
-    <div class="item"><h4>6</h4></div>
-    <div class="item"><h4>7</h4></div>
-    <div class="item"><h4>8</h4></div>
-    <div class="item"><h4>9</h4></div>
-    <div class="item"><h4>10</h4></div>
-    <div class="item"><h4>11</h4></div>
-    <div class="item"><h4>12</h4></div>
 </div>
-
-</div>
+  
 <!-- carousel end-->
 
   </div>
@@ -308,10 +389,156 @@
     <img src="./assets/sponspored-icons/shah_cement.png" alt="shah_cement" >
   </div>
 </section>
+<section >
+  <svg xmlns="http://www.w3.org/2000/svg" id="bg-5" viewBox="0 0 1728 1931" fill="none">
+    <path d="M1751 119.553C1343.42 107.432 528.259 290.134 528.259 1117.9C528.259 2152.62 -198.694 1555.52 13.9762 1863" stroke="url(#paint0_linear_270_152)" stroke-width="237"/>
+    <defs>
+      <linearGradient id="paint0_linear_270_152" x1="863" y1="119" x2="863" y2="1863" gradientUnits="userSpaceOnUse">
+        <stop stop-color="#4D0C0C"/>
+        <stop offset="1" stop-color="#251919"/>
+      </linearGradient>
+    </defs>
+  </svg>
+  <div class="testimonial-container">
+    <div class="left">
+      <h2 class="heading-title title-red">Testimonial</h2>
+      <p class="sub-section-title">What our Client says about us</p>
+      <div class="testimonial-content">
+       <p>Morem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. </p> 
+  <p> Curabitur tempus urna at turpis condimentum lobortis. Ut commodo efficitur neque.</p>
+       
+    <p> Curabitur tempus urna at turpis condimentum lobortis. Ut commodo efficitur neque.</p>
+       
+      </div>
+    </div>
+   <div class="right desktop">
+   
+      <div class="bg-outer">
+      </div>
+          <div class="button-testimonial-container">
+            <button id="prevButtonTestimonial">
+            <svg xmlns="http://www.w3.org/2000/svg" width="57" height="57" viewBox="0 0 57 57" fill="none">
+              <circle cx="28.5" cy="28.5" r="26.5" stroke="#1E1E1E" stroke-width="4"/>
+              <path d="M17.9393 26.9393C17.3536 27.5251 17.3536 28.4749 17.9393 29.0607L27.4853 38.6066C28.0711 39.1924 29.0208 39.1924 29.6066 38.6066C30.1924 38.0208 30.1924 37.0711 29.6066 36.4853L21.1213 28L29.6066 19.5147C30.1924 18.9289 30.1924 17.9792 29.6066 17.3934C29.0208 16.8076 28.0711 16.8076 27.4853 17.3934L17.9393 26.9393ZM37 26.5L19 26.5L19 29.5L37 29.5L37 26.5Z" fill="#D10000"/>
+            </svg></button>
+          <button id="nextButtonTestimonial"><svg width="57" height="57" viewBox="0 0 57 57" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="28.5" cy="28.5" r="26.5" stroke="#1E1E1E" stroke-width="4"/>
+            <path d="M39.0607 29.0607C39.6464 28.4749 39.6464 27.5251 39.0607 26.9393L29.5147 17.3934C28.9289 16.8076 27.9792 16.8076 27.3934 17.3934C26.8076 17.9792 26.8076 18.9289 27.3934 19.5147L35.8787 28L27.3934 36.4853C26.8076 37.0711 26.8076 38.0208 27.3934 38.6066C27.9792 39.1924 28.9289 39.1924 29.5147 38.6066L39.0607 29.0607ZM18 29.5H38V26.5H18V29.5Z" fill="#D10000"/>
+            </svg>
+            </button>
+          </div>
+          <div class="testimonial-carousel-container">
+            <div class="testimonial-carousel">
+              <div class="bg-inner">
+                01
+              </div>
+              <div class="bg-inner">
+                02
+              </div>
+              <div class="bg-inner">
+                03
+              </div>
+              <div class="bg-inner">
+                04
+              </div>
+              <div class="bg-inner">
+                05
+              </div>
+          </div>
+          </div>
+       
+      
+      
 
+   
+   </div>
+  </div>
+  
+</section>
+<svg id="bg-6" viewBox="0 0 522 595" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path opacity="0.53" d="M183.789 427.431L421.019 449.52C204.883 326.153 155.521 251.655 337.909 353.084C520.297 454.513 690.837 551.685 451.214 439.48C211.59 327.275 11.6246 107.993 242.747 226.005C473.869 344.017 619.145 394.917 423.108 345.992C225.099 296.574 297.752 228.952 503.385 344.262" stroke="url(#paint0_linear_313_733)"/>
+  <path opacity="0.53" d="M126.385 390.72L363.616 412.809C147.479 289.442 98.1176 214.944 280.506 316.373C462.894 417.802 633.434 514.974 393.81 402.769C154.187 290.565 -45.7787 71.2816 185.343 189.294C416.465 307.306 561.742 358.206 365.705 309.281C167.696 259.863 240.348 192.241 445.981 307.551" stroke="url(#paint1_linear_313_733)"/>
+  <path opacity="0.53" d="M433.745 128.085L195.537 132.91C424.216 231.097 481.67 299.548 289 219.35C96.3303 139.153 -84.0867 61.8489 166.669 146.294C417.424 230.738 640.86 426.053 397.896 334.878C154.932 243.704 4.83907 209.524 205.145 236.013C407.467 262.769 342.91 338.157 125.577 246.791" stroke="url(#paint2_linear_313_733)"/>
+  <defs>
+  <linearGradient id="paint0_linear_313_733" x1="384.818" y1="283.849" x2="286.997" y2="479.131" gradientUnits="userSpaceOnUse">
+  <stop stop-color="#8F0618"/>
+  <stop offset="0.229167" stop-color="#6B0000"/>
+  <stop offset="0.557292" stop-color="#D10000"/>
+  <stop offset="0.817708" stop-color="#1E1E1E"/>
+  <stop offset="0.9375" stop-color="white"/>
+  </linearGradient>
+  <linearGradient id="paint1_linear_313_733" x1="327.415" y1="247.138" x2="229.593" y2="442.42" gradientUnits="userSpaceOnUse">
+  <stop stop-color="#8F0618"/>
+  <stop offset="0.229167" stop-color="#6B0000"/>
+  <stop offset="0.557292" stop-color="#D10000"/>
+  <stop offset="0.817708" stop-color="#1E1E1E"/>
+  <stop offset="0.9375" stop-color="white"/>
+  </linearGradient>
+  <linearGradient id="paint2_linear_313_733" x1="250.204" y1="293.437" x2="325.362" y2="88.3635" gradientUnits="userSpaceOnUse">
+  <stop stop-color="#8F0618"/>
+  <stop offset="0.229167" stop-color="#6B0000"/>
+  <stop offset="0.557292" stop-color="#D10000"/>
+  <stop offset="0.817708" stop-color="#1E1E1E"/>
+  <stop offset="0.9375" stop-color="white"/>
+  </linearGradient>
+  </defs>
+  </svg>
+  
+<section>
+  <h2 class="heading-title title-red">Contact Us</h2>
+  <p class="sub-section-title">We are here to listen to your business needs</p>
+<div class="contact-container">
+  <div class="left">
+    <h3>Want to talk to us?</h3>
+    <h1>Hello@buzzdhk.com</h1>
+
+    <footer>
+      <h4>Follow us</h4>
+      <div class="social-container">
+        <a href="#">
+          <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
+            <path d="M27.8667 2.66675H4.13335C3.74437 2.66675 3.37132 2.82127 3.09626 3.09632C2.82121 3.37138 2.66669 3.74443 2.66669 4.13341V27.8667C2.66669 28.2557 2.82121 28.6288 3.09626 28.9038C3.37132 29.1789 3.74437 29.3334 4.13335 29.3334H16.9067V19.0001H13.44V15.0001H16.9067V12.0001C16.8349 11.2958 16.918 10.5842 17.1503 9.91546C17.3826 9.24668 17.7584 8.63681 18.2513 8.12863C18.7442 7.62045 19.3424 7.22627 20.0038 6.97373C20.6652 6.72119 21.3738 6.61642 22.08 6.66675C23.1178 6.66036 24.1551 6.71378 25.1867 6.82675V10.4267H23.0667C21.3867 10.4267 21.0667 11.2267 21.0667 12.3867V14.9601H25.0667L24.5467 18.9601H21.0667V29.3334H27.8667C28.0593 29.3334 28.25 29.2955 28.428 29.2218C28.6059 29.1481 28.7676 29.04 28.9038 28.9038C29.04 28.7676 29.148 28.606 29.2217 28.428C29.2954 28.2501 29.3334 28.0594 29.3334 27.8667V4.13341C29.3334 3.94081 29.2954 3.75009 29.2217 3.57215C29.148 3.3942 29.04 3.23252 28.9038 3.09632C28.7676 2.96013 28.6059 2.8521 28.428 2.77839C28.25 2.70468 28.0593 2.66675 27.8667 2.66675Z" fill="white"/>
+            </svg>
+        </a>
+        <a href="#">
+          <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
+            <path d="M23.8653 13.6666C24.308 13.5666 24.532 13.4946 24.5333 13.4479C24.5781 13.4286 24.6225 13.4086 24.6667 13.3879C24.8371 13.3129 25.0218 13.2756 25.208 13.2786C25.4107 13.2786 25.6133 13.3159 25.788 13.3879C26.3093 13.5733 26.636 13.9533 26.644 14.3799C26.648 14.5546 26.5947 14.8253 26.3213 15.1066C26.0907 15.3413 25.744 15.5493 25.2573 15.7413C25.129 15.7893 24.9991 15.8333 24.868 15.8733C24.3747 16.0293 23.628 16.2666 23.4333 16.7226C23.3333 16.9546 23.376 17.2599 23.5733 17.6599C23.6373 17.8146 25.244 21.4666 28.8093 22.0533C28.9608 22.0774 29.098 22.1569 29.1943 22.2764C29.2906 22.3958 29.3392 22.5467 29.3307 22.6999C29.3251 22.7947 29.3025 22.8878 29.264 22.9746C29.136 23.2719 28.8413 23.5226 28.3627 23.7453C27.776 24.0159 26.9 24.2426 25.7547 24.4226C25.6973 24.5333 25.6347 24.8159 25.596 24.9933C25.5524 25.2017 25.5012 25.4085 25.4427 25.6133C25.348 25.9386 25.0973 26.1253 24.728 26.1253C24.5733 26.1253 24.3733 26.0986 24.1147 26.0493C23.6545 25.9536 23.186 25.9045 22.716 25.9026C22.3907 25.9026 22.0547 25.9293 21.716 25.9866C21.0627 26.0946 20.5 26.4919 19.8467 26.9519C18.8933 27.6226 17.8133 28.3853 16.1627 28.3853C16.0986 28.3854 16.0346 28.3836 15.9707 28.3799C15.9259 28.3834 15.8809 28.3851 15.836 28.3853C14.1867 28.3853 13.1067 27.6226 12.1533 26.9493C11.5 26.4893 10.9373 26.0933 10.284 25.9853C9.9536 25.9293 9.61912 25.9007 9.28401 25.8999C8.70001 25.8999 8.22934 25.9919 7.88667 26.0586C7.65067 26.1026 7.44934 26.1426 7.27334 26.1426C6.80667 26.1426 6.62801 25.8599 6.55734 25.6226C6.49817 25.4167 6.44702 25.2085 6.40401 24.9986C6.36267 24.8093 6.30267 24.5346 6.24401 24.4253C5.10001 24.2466 4.22267 24.0186 3.63601 23.7453C3.15601 23.5253 2.86134 23.2733 2.73334 22.9719C2.69524 22.8864 2.67266 22.7947 2.66667 22.7013C2.65812 22.5476 2.7068 22.3961 2.80333 22.2762C2.89985 22.1563 3.03737 22.0764 3.18934 22.0519C4.00051 21.9169 4.77496 21.6154 5.46401 21.1666C6.07019 20.7703 6.61584 20.2885 7.08401 19.7359C7.6342 19.1017 8.09123 18.3924 8.44134 17.6293C8.62267 17.2599 8.66667 16.9546 8.56801 16.7226C8.37334 16.2666 7.62401 16.0293 7.13067 15.8733C6.98934 15.8279 6.85467 15.7866 6.74134 15.7413C6.30934 15.5719 5.97601 15.3799 5.74801 15.1733C5.33334 14.7959 5.33334 14.4253 5.36801 14.2386C5.42267 13.9533 5.62267 13.6986 5.93334 13.5159C6.17498 13.373 6.44996 13.2962 6.73067 13.2933C6.88635 13.291 7.04062 13.3229 7.18267 13.3866C7.27867 13.4319 7.37334 13.4719 7.46534 13.5066C7.46801 13.5493 7.65201 13.6026 8.01734 13.6706C8.14134 13.6933 8.26001 13.7053 8.37067 13.7053C8.52064 13.7087 8.66965 13.6806 8.80801 13.6226L8.77067 13.0279C8.65734 11.2253 8.51601 8.97992 9.11334 7.64792C9.49635 6.77269 10.0482 5.9816 10.7373 5.31992C11.3013 4.78659 11.9547 4.35459 12.6827 4.03459C13.6444 3.61514 14.6814 3.39558 15.7307 3.38925L16.256 3.38525C16.8493 3.38525 18.0333 3.46792 19.3013 4.02792C20.021 4.34161 20.6813 4.77685 21.2533 5.31459C21.9461 5.9772 22.5003 6.77077 22.884 7.64925C23.4813 8.98259 23.34 11.2279 23.224 13.0333L23.22 13.1093C23.2067 13.2866 23.1973 13.4586 23.188 13.6253C23.3046 13.6745 23.4294 13.7017 23.556 13.7053C23.6547 13.6999 23.7573 13.6879 23.8653 13.6666Z" fill="white"/>
+            </svg>
+        </a>
+         <a href="#">
+          <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M16 9.33325C14.2319 9.33325 12.5362 10.0356 11.2859 11.2859C10.0357 12.5361 9.33331 14.2318 9.33331 15.9999C9.33331 17.768 10.0357 19.4637 11.2859 20.714C12.5362 21.9642 14.2319 22.6666 16 22.6666C17.7681 22.6666 19.4638 21.9642 20.714 20.714C21.9643 19.4637 22.6666 17.768 22.6666 15.9999C22.6666 14.2318 21.9643 12.5361 20.714 11.2859C19.4638 10.0356 17.7681 9.33325 16 9.33325ZM12 15.9999C12 17.0608 12.4214 18.0782 13.1716 18.8283C13.9217 19.5785 14.9391 19.9999 16 19.9999C17.0608 19.9999 18.0783 19.5785 18.8284 18.8283C19.5786 18.0782 20 17.0608 20 15.9999C20 14.9391 19.5786 13.9216 18.8284 13.1715C18.0783 12.4213 17.0608 11.9999 16 11.9999C14.9391 11.9999 13.9217 12.4213 13.1716 13.1715C12.4214 13.9216 12 14.9391 12 15.9999Z" fill="white"/>
+            <path d="M24 6.6665C23.6463 6.6665 23.3072 6.80698 23.0571 7.05703C22.8071 7.30708 22.6666 7.64622 22.6666 7.99984C22.6666 8.35346 22.8071 8.6926 23.0571 8.94265C23.3072 9.19269 23.6463 9.33317 24 9.33317C24.3536 9.33317 24.6927 9.19269 24.9428 8.94265C25.1928 8.6926 25.3333 8.35346 25.3333 7.99984C25.3333 7.64622 25.1928 7.30708 24.9428 7.05703C24.6927 6.80698 24.3536 6.6665 24 6.6665Z" fill="white"/>
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M6.66665 1.33325C5.25216 1.33325 3.8956 1.89516 2.89541 2.89535C1.89522 3.89554 1.33331 5.2521 1.33331 6.66659V25.3333C1.33331 26.7477 1.89522 28.1043 2.89541 29.1045C3.8956 30.1047 5.25216 30.6666 6.66665 30.6666H25.3333C26.7478 30.6666 28.1044 30.1047 29.1045 29.1045C30.1047 28.1043 30.6666 26.7477 30.6666 25.3333V6.66659C30.6666 5.2521 30.1047 3.89554 29.1045 2.89535C28.1044 1.89516 26.7478 1.33325 25.3333 1.33325H6.66665ZM25.3333 3.99992H6.66665C5.9594 3.99992 5.28113 4.28087 4.78103 4.78097C4.28093 5.28106 3.99998 5.95934 3.99998 6.66659V25.3333C3.99998 26.0405 4.28093 26.7188 4.78103 27.2189C5.28113 27.719 5.9594 27.9999 6.66665 27.9999H25.3333C26.0406 27.9999 26.7188 27.719 27.2189 27.2189C27.719 26.7188 28 26.0405 28 25.3333V6.66659C28 5.95934 27.719 5.28106 27.2189 4.78097C26.7188 4.28087 26.0406 3.99992 25.3333 3.99992Z" fill="white"/>
+            </svg>
+         </a>
+           
+      </div>
+    </footer>
+</div>
+<div class="right">
+  <div class="form-bg">
+    <form action="#" class="fullform">
+      <label for="fullname">Full Name</label>
+      <input type="text" name="fullname" id="fullname">
+      <label for="fullname">Email</label>
+      <input type="text" name="email" id="email">
+      <label for="companyname">Company Name</label>
+      <input type="text" name="companyname" id="companyname">
+      <label for="subject">Subject</label>
+      <input type="text" name="subject" id="subject">
+      <label for="message">Message</label>
+      <textarea id="message"></textarea>
+      <button type="submit" id="submit"><span>Send your quote</span><svg xmlns="http://www.w3.org/2000/svg" id="plane-svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+        <path d="M20.56 3.34001C20.4151 3.23977 20.2464 3.17959 20.0708 3.16554C19.8952 3.15149 19.719 3.18408 19.56 3.26001L2.56001 11.26C2.38674 11.3425 2.24087 11.4731 2.1398 11.6362C2.03873 11.7994 1.98673 11.9881 1.99001 12.18C1.99319 12.3718 2.05145 12.5586 2.15783 12.7181C2.26421 12.8777 2.41423 13.0033 2.59001 13.08L8.00001 15.45V22.17L13.84 18L18.6 20.08C18.725 20.1394 18.8616 20.1701 19 20.17C19.1838 20.1688 19.3638 20.1169 19.52 20.02C19.6577 19.9367 19.7732 19.8213 19.8568 19.6838C19.9403 19.5463 19.9895 19.3906 20 19.23L21 4.23001C21.0105 4.05619 20.9754 3.88265 20.8983 3.72655C20.8211 3.57045 20.7045 3.43721 20.56 3.34001ZM18.1 17.68L12.83 15.37L16 9.17001L8.35001 13.42L5.42001 12.13L18.89 5.79001L18.1 17.68Z" fill="white"/>
+        </svg></button>
+    </form>
+  </div>
+</div>
+</div>
+</section>
 </main>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js" integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
     <script type="module" src="/main.js"></script>
   </body>
 </html>
